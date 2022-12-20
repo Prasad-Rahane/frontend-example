@@ -35,7 +35,7 @@ return(
     
       
       
-       <Route exact path=url +"/">
+       <Route exact path="/">
         <Home/>
        </Route>
       
