@@ -26,8 +26,8 @@ const Routing = ()=>{
       dispatch({type:"USER",payload:user})
      
     }else{
-        if(!history.location.pathname.startsWith('url/reset'))
-             history.push('url/signin')
+        if(!history.location.pathname.startsWith('/reset'))
+             history.push('/signin')
       }
     },[])
 return(
