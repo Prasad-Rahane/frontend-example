@@ -35,29 +35,29 @@ return(
     
       
       
-       <Route exact path="/">
+       <Route exact path=url +"/">
         <Home/>
        </Route>
       
 
-       <Route exact path="/Profile">
+       <Route exact path=url "/Profile">
         <Profile/>
        </Route>
 
-       <Route path="/Signup">
+       <Route path=url "/Signup">
         <Signup/>
        </Route>
 
-       <Route path="/Signin">
+       <Route path=url "/Signin">
         <Signin/>
        </Route>
-       <Route path="/createpost">
+       <Route path=url "/createpost">
         <CreatePost/>
        </Route>
-       <Route path="/profile/:userid">
+       <Route path=url "/profile/:userid">
         <UserProfile />
       </Route>
-      <Route path="/myfollowingpost">
+      <Route path=url "/myfollowingpost">
         <SubscribedUserPosts />
       </Route>
        </Switch>
