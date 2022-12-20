@@ -12,8 +12,8 @@ import UserProfile from './components/Screens/UserProfile'
 import SubscribedUserPosts from './components/Screens/SubscribesUserPosts'
 //import Reset from './components/screens/Reset'
 //import NewPassword from './components/screens/Newpassword'
-const url='https://insta12.adaptable.app/'
-
+//const url='https://insta12.adaptable.app/'
+import axios from "axios";
 export const UserContext = createContext()
 
 
@@ -67,6 +67,12 @@ return(
 
 function App() {
   const [state,dispatch] = useReducer(reducer,initialState)
+    const response = await axios.post(
+      "https://insta12-api.onrender.com/sendemail",
+      data
+    );
+    console.log(response.data);
+  };
   return (
     <UserContext.Provider value={{state,dispatch}}>
     <BrowserRouter>
