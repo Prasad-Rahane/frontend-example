@@ -12,7 +12,10 @@ import UserProfile from './components/Screens/UserProfile'
 import SubscribedUserPosts from './components/Screens/SubscribesUserPosts'
 //import Reset from './components/screens/Reset'
 //import NewPassword from './components/screens/Newpassword'
+const url='https://insta12.adaptable.app/'
+
 export const UserContext = createContext()
+
 
 const Routing = ()=>{
   const history = useHistory()
