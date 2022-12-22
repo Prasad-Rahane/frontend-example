@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import M from 'materialize-css'
 import {useHistory} from 'react-router-dom'
+const burl='https://insta12.adaptable.app/'
 const CretePost = ()=>{
     const history = useHistory()
     const [title,setTitle] = useState("")
@@ -9,7 +10,7 @@ const CretePost = ()=>{
     const [url,setUrl] = useState("")
     useEffect(()=>{
        if(url){
-        fetch("/createpost",{
+        fetch(burl+"/createpost",{
             method:"post",
             headers:{
                 "Content-Type":"application/json",
