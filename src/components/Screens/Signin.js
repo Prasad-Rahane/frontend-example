@@ -2,7 +2,7 @@ import React,{useState,useContext,} from 'react'
 import {Link,useHistory} from 'react-router-dom'
 import {UserContext} from '../../App'
 import M from 'materialize-css'
-const burl='https://insta12.adaptable.app/'
+
 const SignIn  = ()=>{
     const {state,dispatch} = useContext(UserContext)
     const history = useHistory()
@@ -13,7 +13,7 @@ const SignIn  = ()=>{
             M.toast({html: "invalid email",classes:"#c62828 red darken-3"})
             return
         }
-        fetch(burl+"/signin",{
+        fetch("/signin",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"
